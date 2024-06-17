@@ -1,0 +1,44 @@
+ERROR - 2024-03-22 05:12:14 --> Error connecting to the database: mysqli_sql_exception: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+ in C:\laragon-6.0.0\www\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('192.168.2.20', 'pvasquez', 'pvasquez!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\app\Controllers\Service\Usuarios.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->index()
+#8 C:\laragon-6.0.0\www\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+ in C:\laragon-6.0.0\www\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon-6.0.0\www\app\Controllers\Service\Usuarios.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon-6.0.0\www\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->index()
+#7 C:\laragon-6.0.0\www\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-22 05:12:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Service\Usuarios.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
