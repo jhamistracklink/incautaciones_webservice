@@ -51,7 +51,7 @@ class Database extends Config
         'username'     => 'bsoft-user',
         'password'     => '$Gt&bft3SLhx-5PrKs=',
         'database'     => 'BSOFT',
-        'DBDriver'     => 'sqlsrv',
+        'DBDriver'     => 'SQLSRV', 
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
