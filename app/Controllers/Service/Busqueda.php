@@ -74,9 +74,14 @@ class Busqueda extends ResourceController
 
     public function actualizar_rq()
     {
+        $gestion = $this->request->getPost('gestion');
         $placa = $this->request->getPost('placa');
         $rq = $this->request->getPost('rq');
         $resposable = $this->request->getPost('responsable');
+
+        $ubicado = $this->request->getPost('ubicado');
+        $capturado = $this->request->getPost('capturado');
+        $observaciones = $this->request->getPost('observaciones');
 
         if (!$placa || !$rq) {
             return $this->respond(['msg' => 'Placa y RQ son requeridos', 'status' => 'error'], 400);
@@ -90,9 +95,13 @@ class Busqueda extends ResourceController
         }
 
         $updateData = [
+            'gestion' => $gestion,
             'rq' => $rq,
             'update_at' => date('Y-m-d H:i:s'),
-            'responsable' => $resposable
+            'responsable' => $resposable,
+            'ubicado' => $ubicado,
+            'capturado' => $capturado,
+            'observaciones' => $observaciones
         ];
 
         if ($model->update($ruta['id'], $updateData)) {
@@ -107,7 +116,7 @@ class Busqueda extends ResourceController
         $data = $this->request->getPost();
     
         // Validar que todos los campos requeridos estén presentes
-        $requiredFields = ['gestion', 'placa', 'marca', 'modelo', 'color', 'distrito', 'domicilio', 'ccc2', 'rq', 'empresa', 'latitud', 'longitud', 'responsable'];
+        $requiredFields = ['gestion', 'placa', 'marca', 'modelo', 'color', 'distrito', 'domicilio', 'ccc2', 'rq', 'empresa', 'latitud', 'longitud', 'responsable', 'ubicado', 'capturado', 'observaciones'];
         foreach ($requiredFields as $field) {
             if (!isset($data[$field])) {
                 return $this->respond(['msg' => "El campo $field es requerido", 'status' => 'error'], 400);
