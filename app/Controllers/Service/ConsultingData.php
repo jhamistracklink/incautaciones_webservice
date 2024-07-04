@@ -4,6 +4,7 @@ namespace App\Controllers\Service;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Model;
 use CodeIgniter\RESTful\ResourceController;
 
 class ConsultingData extends ResourceController
@@ -65,10 +66,11 @@ class ConsultingData extends ResourceController
           @Producto ='$var9',    
           @FechaI='$var10',      
           @FechaF='$var11'");
+
+
+
         $respuestaBSOFT = $data->getResultArray();
 
-        $modelTrack = model('ConsultingDataModel');
-        $dataHomologacion = $modelTrack->findAll();
         $resultFinal = [];
         $contador = 0;
 
@@ -78,24 +80,15 @@ class ConsultingData extends ResourceController
 
             $contador++;
 
-            foreach ($dataHomologacion as $key2 => $value2) {
-
-                // var_dump($value['OP_min']);
-                // var_dump(trim($value2['imeiExtrae'], "\r\n"));
-
-                if (substr($value['OP_Numero_Doc'], 0, 4) == $value2['imeiExtrae']) {
-
-                    $resultadoParams = [
-                        'nombre_equipo' => $value2['modelo'],
-                        'marca' => $value2['marca'],
-                        'modelo' => $value2['modelo'],
-                        'nserie' => $value['OP_Numero_Doc'],
-                        'codHomologacion' => $value2['codHomologacion'],
-                        'comprador' => $value['AnexoDescripcion'],
-                        'documento' => $value['Anexo'],
-                    ];
-                }
-            }
+            $resultadoParams = [
+                'nombre_equipo' => $value['modelo'],
+                'marca' => $value['marca'],
+                'modelo' => $value['modelo'],
+                'nserie' => $value['OP_Numero_Doc'],
+                'codHomologacion' => $value['codHomologacion'],
+                'comprador' => $value['AnexoDescripcion'],
+                'documento' => $value['Anexo'],
+            ];
 
             $resultadoParams['nro'] = $contador;
 
@@ -116,6 +109,7 @@ class ConsultingData extends ResourceController
             $resultFinal[] = $resultadoParams;
         }
 
-        return $this->respond($resultFinal, 200);
+        
+        return $this->respond($respuestaBSOFT, 200);
     }
 }

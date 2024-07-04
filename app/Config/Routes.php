@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->presenter('service/usuarios');
 
+// (Para consultar, Interno)
 $routes->post('login', 'Service\Usuarios::signin');
 $routes->get('busqueda/por-placa/(:segment)', 'Service\Busqueda::buscar_por_placa/$1');
 $routes->post('busqueda/actualizar', 'Service\Busqueda::update_rq_ubi');

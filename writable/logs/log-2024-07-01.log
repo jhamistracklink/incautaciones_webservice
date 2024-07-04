@@ -1,0 +1,23 @@
+ERROR - 2024-07-01 17:50:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'BSOFT.dbo.infoIncautaciones'.
+CRITICAL - 2024-07-01 17:50:41 --> CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'BSOFT.dbo.infoIncautaciones'.
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE "BSOFT"."dbo"."infoIncautaciones" SET "rq" = :rq:, "ubicado" = :ubicado:, "idusuario" = :idusuario:
+WHERE "placa" = :placa:', [...], false)
+ 2 APPPATH\Controllers\Service\Busqueda.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->update_rq_ubi()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 17:50:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid object name 'BSOFT.dbo.infoIncautaciones'.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 482.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLSRV\Connection->execute('UPDATE "BSOFT"."dbo"."infoIncautaciones" SET "rq" = \'si\', "ubicado" = \'si\', "idusuario" = \'1\'
+WHERE "placa" = \'BLA359\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "BSOFT"."dbo"."infoIncautaciones" SET "rq" = \'si\', "ubicado" = \'si\', "idusuario" = \'1\'
+WHERE "placa" = \'BLA359\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE "BSOFT"."dbo"."infoIncautaciones" SET "rq" = :rq:, "ubicado" = :ubicado:, "idusuario" = :idusuario:
+WHERE "placa" = :placa:', [...], false)
+ 4 APPPATH\Controllers\Service\Busqueda.php(56): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->update_rq_ubi()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
