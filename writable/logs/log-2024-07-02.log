@@ -1,0 +1,62 @@
+ERROR - 2024-07-02 10:21:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'float, CONVERT(datetime, '2024-03-01')) + 2 AS fechaInicio' at line 1 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT CONVERT(...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONVERT(...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONVERT(...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\ConsultingData.php(31): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(...', Array)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-02 10:21:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'float, CONVERT(datetime, '2024-03-01')) + 2 AS fechaInicio' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Service\ConsultingData.php(31): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(float, CONVERT(datetime, ?)) + 2 AS fechaInicio', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:21:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'float, CONVERT(datetime, '2024-03-01')) + 2 AS fechaInicio' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONVERT(float, CONVERT(datetime, \'2024-03-01\')) + 2 AS fechaInicio')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONVERT(float, CONVERT(datetime, \'2024-03-01\')) + 2 AS fechaInicio')
+ 3 APPPATH\Controllers\Service\ConsultingData.php(31): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(float, CONVERT(datetime, ?)) + 2 AS fechaInicio', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:21:20 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'float, CONVERT(datetime, '2024-03-01')) + 2 AS fechaInicio' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT CONVERT(float, CONVERT(datetime, \'2024-03-01\')) + 2 AS fechaInicio', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONVERT(float, CONVERT(datetime, \'2024-03-01\')) + 2 AS fechaInicio')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONVERT(float, CONVERT(datetime, \'2024-03-01\')) + 2 AS fechaInicio')
+ 4 APPPATH\Controllers\Service\ConsultingData.php(31): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(float, CONVERT(datetime, ?)) + 2 AS fechaInicio', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:57:21 --> InvalidArgumentException: bsoft is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('bsoft')
+ 2 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(null)
+ 3 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\ConsultingDataBSOFT', [...])
+ 4 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 5 APPPATH\Controllers\Service\ConsultingData.php(31): model('ConsultingDataBSOFT')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:58:00 --> TypeError: Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, object given, called in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\ConsultingData.php on line 34
+in SYSTEMPATH\Database\BaseConnection.php on line 570.
+ 1 APPPATH\Controllers\Service\ConsultingData.php(34): CodeIgniter\Database\BaseConnection->query(Object(App\Models\ConsultingDataBSOFT), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:58:15 --> TypeError: Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, object given, called in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\ConsultingData.php on line 34
+in SYSTEMPATH\Database\BaseConnection.php on line 570.
+ 1 APPPATH\Controllers\Service\ConsultingData.php(34): CodeIgniter\Database\BaseConnection->query(Object(App\Models\ConsultingDataBSOFT), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

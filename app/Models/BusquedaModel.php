@@ -23,7 +23,7 @@ class BusquedaModel extends Model
         'dias_atraso', 'tramo_mora', 'cuotas_pagadas', 'cuotas_pendientes',
         'cuotas_atrasadas', 'dias_transcurridos', 'rango_dias_of_oc',
         'rng_antiguedad_oficio_aju', 'gama_marca', 'gama_precio', 'telef_1', 'telef_2',
-        'telef_3', 'telef_4', 'telef_5', 'rq', 'ubicado'
+        'telef_3', 'telef_4', 'telef_5', 'rq', 'ubicado','idusuario'
     ];
 
     public function searchByPlaca($placa)

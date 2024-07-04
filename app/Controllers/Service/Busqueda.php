@@ -47,13 +47,18 @@ class Busqueda extends ResourceController
 
         $data = ['rq' => $rq, 'ubicado' => $ubicado, 'idusuario' => $idusuario];
 
-        // $modelBusq = model('BusquedaModel');
+        $modelBusq = model('BusquedaModel');
+
+        //Se obtiene el id
+        $selectIdPlaca = $modelBusq->where('placa',$placa)->first();
+    
+        $modelBusq->update($selectIdPlaca['id'], $data);
 
         //$update = $this->model->update($data,'placa="AMX636"');
 
-        $this->builder->where('placa', $placa);
+        // $this->builder->where('placa', $placa);
 
-        $this->builder->update($data);
+        // $this->builder->update($data);
 
         // if (!$update) {
         //     return $this->respond(['msg'=>'Los campos rq y/o ubicado no se actualizaron', 'status'=>'error']);

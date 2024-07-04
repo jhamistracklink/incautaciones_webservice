@@ -45,6 +45,15 @@ class Database extends Config
     //     'numberNative' => false,
     // ];
 
+    //BSOFT prod: 
+    //'hostname'     => '192.168.2.8',
+    // 'username'     => 'bsoft-user',
+    //'password'     => '$Gt&bft3SLhx-5PrKs=',
+
+    //BSOFT PRUEBAS: 
+    //'hostname'     => '192.168.2.172',
+    // 'username'     => 'sa',
+    //'password'     => 'TrackAdmin1',
     public array $default = [
         'DSN'          => '',
         'hostname'     => '192.168.2.8',
