@@ -1,0 +1,102 @@
+ERROR - 2024-07-09 10:27:00 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\ConsultingData.php(32): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(...', Array)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-07-09 10:27:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [1326].  SQLSTATE: 08001, code: 1326
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 1326
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Service\ConsultingData.php(32): CodeIgniter\Database\BaseConnection->query('SELECT CONVERT(float, CONVERT(datetime, ?)) + 2 AS fechaInicio', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 10:47:01 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2024-07-09 10:47:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Service\ConsultingData.php(68): CodeIgniter\Database\BaseConnection->query('exec sp_Rep_AlmacenSalidas_MTC
+        @Empresa  = \'20525107915\',  
+        @Localidad =\'01\',
+        @Almacen =\'001\',     
+        @transaccion =\'\',
+          @Entidad =\'\',
+          @OPSerie =\'\',    
+          @OPNumero =\'\',    
+          @Linea =\'001\',       
+          @Producto =\'\',    
+          @FechaI=\'45352\',      
+          @FechaF=\'45480\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 10:47:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Memory limit of 10240 KB exceeded for buffered query
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 482.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLSRV\Connection->execute('exec sp_Rep_AlmacenSalidas_MTC
+        @Empresa  = \'20525107915\',  
+        @Localidad =\'01\',
+        @Almacen =\'001\',     
+        @transaccion =\'\',
+          @Entidad =\'\',
+          @OPSerie =\'\',    
+          @OPNumero =\'\',    
+          @Linea =\'001\',       
+          @Producto =\'\',    
+          @FechaI=\'45352\',      
+          @FechaF=\'45480\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('exec sp_Rep_AlmacenSalidas_MTC
+        @Empresa  = \'20525107915\',  
+        @Localidad =\'01\',
+        @Almacen =\'001\',     
+        @transaccion =\'\',
+          @Entidad =\'\',
+          @OPSerie =\'\',    
+          @OPNumero =\'\',    
+          @Linea =\'001\',       
+          @Producto =\'\',    
+          @FechaI=\'45352\',      
+          @FechaF=\'45480\'')
+ 3 APPPATH\Controllers\Service\ConsultingData.php(68): CodeIgniter\Database\BaseConnection->query('exec sp_Rep_AlmacenSalidas_MTC
+        @Empresa  = \'20525107915\',  
+        @Localidad =\'01\',
+        @Almacen =\'001\',     
+        @transaccion =\'\',
+          @Entidad =\'\',
+          @OPSerie =\'\',    
+          @OPNumero =\'\',    
+          @Linea =\'001\',       
+          @Producto =\'\',    
+          @FechaI=\'45352\',      
+          @FechaF=\'45480\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 10:47:01 --> ErrorException: Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\laragon-6.0.0\www\incautaciones_webservice\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Debug\Exceptions.php(157): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Memory limit of 10240 KB exceeded for buffered query
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\ConsultingData.php(68): CodeIgniter\Database\BaseConnection->query('exec sp_Rep_Alm...')
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\ConsultingData->index()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\ConsultingData))
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

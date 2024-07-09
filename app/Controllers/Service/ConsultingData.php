@@ -92,8 +92,6 @@ class ConsultingData extends ResourceController
 
             $resultadoParams['nro'] = $contador;
 
-            //CONSULTA AL ONYX
-
             if (empty($value['Direccion'])) {
                 $dataFinalOnyx = $modelOnyx->where("identdoc", $value['Anexo'])->first();
 
@@ -109,7 +107,6 @@ class ConsultingData extends ResourceController
             $resultFinal[] = $resultadoParams;
         }
 
-        
-        return $this->respond($respuestaBSOFT, 200);
+        return $this->respond($resultFinal, 200);
     }
 }
