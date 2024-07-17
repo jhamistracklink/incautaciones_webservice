@@ -96,16 +96,20 @@ class Busqueda extends ResourceController
         $usuario = $modelUsuario->find($idUsuario);
     
         if (!$usuario) {
-            return $this->respond(['msg' => 'Usuario no encontrado', 'status' => 'error'], 404);
+            return $this->respond(['msg' => 'Usuario no encontrado', 'status' => 'error']);
         }
     
-        $rutaUsuario = $usuario['ruta'];
-    
         $infoRutasModel = model('InfoRutasModel');
-        $lista = $infoRutasModel->where('ruta', $rutaUsuario)->findAll();
+        // $lista = $infoRutasModel->where('ruta', $rutaUsuario)->findAll();
+
+        if (empty($usuario['ruta'])) {
+            $lista = $infoRutasModel->findAll();
+        } else{
+            $lista = $infoRutasModel->where('ruta',$usuario['ruta'])->findAll();
+        }
     
         if (empty($lista)) {
-            return $this->respond(['msg' => 'No se encontraron rutas para el usuario especificado', 'status' => 'error'], 404);
+            return $this->respond(['msg' => 'No se encontraron rutas para el usuario especificado', 'status' => 'error']);
         }
     
         return $this->respond(['data' => $lista, 'status' => 'ok']);
@@ -126,14 +130,14 @@ class Busqueda extends ResourceController
         $prioridad = $this->request->getPost('prioridad');
 
         if (!$placa || !$rq) {
-            return $this->respond(['msg' => 'Placa y RQ son requeridos', 'status' => 'error'], 400);
+            return $this->respond(['msg' => 'Placa y RQ son requeridos', 'status' => 'error']);
         }
 
         $model = model('InfoRutasModel');
         $ruta = $model->where('placa', $placa)->first();
 
         if (!$ruta) {
-            return $this->respond(['msg' => 'No se encontró la ruta con esa placa', 'status' => 'error'], 404);
+            return $this->respond(['msg' => 'No se encontró la ruta con esa placa', 'status' => 'error']);
         }
 
         $updateData = [
@@ -151,7 +155,7 @@ class Busqueda extends ResourceController
         if ($model->update($ruta['id'], $updateData)) {
             return $this->respond(['msg' => 'Actualización exitosa', 'status' => 'ok']);
         } else {
-            return $this->respond(['msg' => 'Error al actualizar el registro', 'status' => 'error'], 500);
+            return $this->respond(['msg' => 'Error al actualizar el registro', 'status' => 'error']);
         }
     }
 
@@ -163,7 +167,7 @@ class Busqueda extends ResourceController
         $requiredFields = ['gestion', 'placa', 'marca', 'modelo', 'color', 'distrito', 'domicilio', 'ccc2', 'rq', 'empresa', 'latitud', 'longitud', 'responsable', 'ubicado', 'capturado', 'observaciones', 'ruta', 'prioridad'];
         foreach ($requiredFields as $field) {
             if (!isset($data[$field])) {
-                return $this->respond(['msg' => "El campo $field es requerido", 'status' => 'error'], 400);
+                return $this->respond(['msg' => "El campo $field es requerido", 'status' => 'error']);
             }
         }
 
@@ -171,7 +175,7 @@ class Busqueda extends ResourceController
         $model = model('InfoRutasModel');
         $existingRecord = $model->where('placa', $data['placa'])->first();
         if ($existingRecord) {
-            return $this->respond(['msg' => 'La placa ya existe en el registro', 'status' => 'error'], 400);
+            return $this->respond(['msg' => 'La placa ya existe en el registro', 'status' => 'error']);
         }
 
         // Agregar la fecha y hora de creación
@@ -181,7 +185,7 @@ class Busqueda extends ResourceController
         if ($model->insert($data)) {
             return $this->respond(['msg' => 'Registro insertado exitosamente', 'status' => 'ok']);
         } else {
-            return $this->respond(['msg' => 'Error al insertar el registro', 'status' => 'error'], 500);
+            return $this->respond(['msg' => 'Error al insertar el registro', 'status' => 'error']);
         }
     }
 
@@ -246,12 +250,12 @@ class Busqueda extends ResourceController
     
         if (!$usuario) {
             log_message('debug', 'Usuario no encontrado');
-            return $this->respond(['msg' => 'Usuario no encontrado', 'status' => 'error'], 404);
+            return $this->respond(['msg' => 'Usuario no encontrado', 'status' => 'error']);
         }
     
         if (!isset($usuario['rol']) || !isset($usuario['ruta'])) {
             log_message('debug', 'Usuario no tiene rol o ruta asignada');
-            return $this->respond(['msg' => 'Usuario no tiene rol o ruta asignada', 'status' => 'error'], 400);
+            return $this->respond(['msg' => 'Usuario no tiene rol o ruta asignada', 'status' => 'error']);
         }
     
         $infoRutasModel = model('InfoRutasModel');
@@ -265,12 +269,12 @@ class Busqueda extends ResourceController
             log_message('debug', 'Consulta ejecutada: ' . $infoRutasModel->getLastQuery());
         } else {
             log_message('debug', 'Rol no autorizado');
-            return $this->respond(['msg' => 'Rol no autorizado', 'status' => 'error'], 403);
+            return $this->respond(['msg' => 'Rol no autorizado', 'status' => 'error']);
         }
     
         if (empty($result)) {
             log_message('debug', 'No se encontraron rutas para el usuario especificado');
-            return $this->respond(['msg' => 'No se encontraron rutas para el usuario especificado', 'status' => 'error'], 404);
+            return $this->respond(['msg' => 'No se encontraron rutas para el usuario especificado', 'status' => 'error']);
         }
     
         log_message('debug', 'Rutas obtenidas: ' . json_encode($result));
