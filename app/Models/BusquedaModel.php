@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class BusquedaModel extends Model
 {
-    protected $DBGroup          = 'trackdb';
+    protected $DBGroup          = 'trackdbLocal';
     protected $table            = 'infoIncautaciones';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
@@ -23,13 +23,13 @@ class BusquedaModel extends Model
         'dias_atraso', 'tramo_mora', 'cuotas_pagadas', 'cuotas_pendientes',
         'cuotas_atrasadas', 'dias_transcurridos', 'rango_dias_of_oc',
         'rng_antiguedad_oficio_aju', 'gama_marca', 'gama_precio', 'telef_1', 'telef_2',
-        'telef_3', 'telef_4', 'telef_5', 'rq', 'ubicado','idusuario'
+        'telef_3', 'telef_4', 'telef_5', 'rq', 'ubicado','idusuario', 'estado', 'responsable_cambio_estado', 'fecha_cambio_estado'
     ];
 
     public function searchByPlaca($placa)
     {
         //return $this->where('placa', $placa)->findAll();
-        return $this->where('placa', $placa)->first();
+        return $this->where(['placa'=> $placa, 'estado' => 1])->first();
     }
 
 }

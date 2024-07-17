@@ -1,0 +1,220 @@
+DEBUG - 2024-07-15 02:27:56 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:27:56 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:27:57 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:27:57 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:27:59 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:27:59 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:28:49 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:28:49 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:33:57 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:33:57 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:33:58 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:33:58 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:34:09 --> Usuario encontrado: {"id":"3","nombres":"Jose Luis","apellidos":"Yaicate","usuario":"","correo":"Jyaicate@tracklink.pe","contra":"$2y$10$oqRl6zKkRTyooKZweOU62u\/ZkCgOd6qU6bwlx5Sp9Zkdy.l1Xj8Oq","fecha_creacion":"2024-04-09 08:22:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:35:11 --> Usuario encontrado: {"id":"3","nombres":"Jose Luis","apellidos":"Yaicate","usuario":"","correo":"Jyaicate@tracklink.pe","contra":"$2y$10$oqRl6zKkRTyooKZweOU62u\/ZkCgOd6qU6bwlx5Sp9Zkdy.l1Xj8Oq","fecha_creacion":"2024-04-09 08:22:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:35:17 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:35:17 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:35:32 --> Usuario encontrado: {"id":"3","nombres":"Jose Luis","apellidos":"Yaicate","usuario":"","correo":"Jyaicate@tracklink.pe","contra":"$2y$10$oqRl6zKkRTyooKZweOU62u\/ZkCgOd6qU6bwlx5Sp9Zkdy.l1Xj8Oq","fecha_creacion":"2024-04-09 08:22:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:37:17 --> Usuario encontrado: {"id":"3","nombres":"Jose Luis","apellidos":"Yaicate","usuario":"","correo":"Jyaicate@tracklink.pe","contra":"$2y$10$oqRl6zKkRTyooKZweOU62u\/ZkCgOd6qU6bwlx5Sp9Zkdy.l1Xj8Oq","fecha_creacion":"2024-04-09 08:22:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:37:27 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:37:27 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:40:29 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:40:29 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:40:30 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:40:30 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:40:34 --> Usuario encontrado: {"id":"2","nombres":"Jesmart","apellidos":"Aleman","usuario":"","correo":"jaleman@tracklink.pe","contra":"$2y$10$aff.VJ.plLoSiYJs7ZmJI.vCCuRDa6WLtlw4ap4Mf8\/FFym18cwGK","fecha_creacion":"2024-04-09 08:21:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:40:40 --> Usuario encontrado: {"id":"3","nombres":"Jose Luis","apellidos":"Yaicate","usuario":"","correo":"Jyaicate@tracklink.pe","contra":"$2y$10$oqRl6zKkRTyooKZweOU62u\/ZkCgOd6qU6bwlx5Sp9Zkdy.l1Xj8Oq","fecha_creacion":"2024-04-09 08:22:21","estado":"1","rol":null,"ruta":null}
+DEBUG - 2024-07-15 02:41:49 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"1"}
+DEBUG - 2024-07-15 02:41:49 --> Usuario no autorizado: rol=2, ruta=1
+DEBUG - 2024-07-15 02:42:48 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"2"}
+DEBUG - 2024-07-15 02:42:48 --> Usuario no autorizado: rol=2, ruta=2
+DEBUG - 2024-07-15 02:42:49 --> Usuario encontrado: {"id":"1","nombres":"admin","apellidos":"admin","usuario":"","correo":"admin@tracklink.pe","contra":"$2y$10$D.SPWjiPMsxmCJMygc6kFutawip0RqpU.35Dzt24YXSiJsyFYmSN.","fecha_creacion":"2024-04-05 12:57:35","estado":"1","rol":"2","ruta":"2"}
+DEBUG - 2024-07-15 02:42:49 --> Usuario no autorizado: rol=2, ruta=2
+CRITICAL - 2024-07-15 03:24:59 --> ArgumentCountError: Too few arguments to function App\Models\UsuariosModel::getRutasPorUsuario(), 2 passed in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php on line 221 and exactly 3 expected
+in APPPATH\Models\UsuariosModel.php on line 18.
+ 1 APPPATH\Controllers\Service\Busqueda.php(221): App\Models\UsuariosModel->getRutasPorUsuario('2', '1
+')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getRutasPorUsuario('1', '2', '1
+')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 03:30:23 --> ArgumentCountError: Too few arguments to function App\Models\UsuariosModel::getRutasPorUsuario(), 2 passed in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php on line 221 and exactly 3 expected
+in APPPATH\Models\UsuariosModel.php on line 18.
+ 1 APPPATH\Controllers\Service\Busqueda.php(221): App\Models\UsuariosModel->getRutasPorUsuario('2', '1
+')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getRutasPorUsuario('1', '2', '1
+')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 03:32:16 --> ArgumentCountError: Too few arguments to function App\Models\UsuariosModel::getRutasPorUsuario(), 2 passed in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php on line 221 and exactly 3 expected
+in APPPATH\Models\UsuariosModel.php on line 18.
+ 1 APPPATH\Controllers\Service\Busqueda.php(221): App\Models\UsuariosModel->getRutasPorUsuario('2', '1
+')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getRutasPorUsuario('1', '2', '1
+')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 03:34:14 --> ArgumentCountError: Too few arguments to function App\Models\UsuariosModel::getRutasPorUsuario(), 2 passed in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php on line 221 and exactly 3 expected
+in APPPATH\Models\UsuariosModel.php on line 18.
+ 1 APPPATH\Controllers\Service\Busqueda.php(221): App\Models\UsuariosModel->getRutasPorUsuario('2', '1
+')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getRutasPorUsuario('1', '2', '1
+')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 03:34:24 --> ArgumentCountError: Too few arguments to function App\Models\UsuariosModel::getRutasPorUsuario(), 2 passed in C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php on line 221 and exactly 3 expected
+in APPPATH\Models\UsuariosModel.php on line 18.
+ 1 APPPATH\Controllers\Service\Busqueda.php(221): App\Models\UsuariosModel->getRutasPorUsuario('2', '1
+')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getRutasPorUsuario('1', '2', '1
+')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+DEBUG - 2024-07-15 03:37:43 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:37:43 --> Rutas obtenidas: []
+DEBUG - 2024-07-15 03:37:48 --> Motorizado viendo sus rutas: 2
+
+DEBUG - 2024-07-15 03:37:48 --> Rutas obtenidas: []
+DEBUG - 2024-07-15 03:37:52 --> Motorizado viendo sus rutas: 3
+
+DEBUG - 2024-07-15 03:37:52 --> Rutas obtenidas: []
+DEBUG - 2024-07-15 03:37:56 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:37:56 --> Rutas obtenidas: []
+DEBUG - 2024-07-15 03:39:13 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:39:13 --> Rutas obtenidas: []
+DEBUG - 2024-07-15 03:48:53 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:48:53 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:48:59 --> Admin viendo todas las rutas
+DEBUG - 2024-07-15 03:48:59 --> Rutas obtenidas: [{"id":"1","gestion":"SI","placa":"PLACA1","marca":"marca1","modelo":"MOL|","color":"col1","distrito":"dist1","domicilio":"dom1","link":"","ccc2":"avenida1","rq":"no","empresa":"emp1","update_at":"2024-07-09 12:32:59","created_at":"2024-07-01 22:42:58","latitud":"-12.034132245208557","longitud":"-77.05729162040089","responsable":"8","ubicado":"si","capturado":"si","observaciones":"Observaci\u00f3n de prueba","ruta":"2","prioridad":null},{"id":"2","gestion":"","placa":"placa2","marca":"undefined","modelo":"undefined","color":"undefined","distrito":"undefined","domicilio":"undefined","link":null,"ccc2":"undefined","rq":"","empresa":"undefined","update_at":"2024-07-01 18:28:12","created_at":"2024-07-01 18:28:12","latitud":"37.386052","longitud":"-122.083851","responsable":"1","ubicado":"","capturado":"","observaciones":"Observaci\u00f3n 2","ruta":"1","prioridad":"alta"},{"id":"3","gestion":"","placa":"ZZZ123","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"dom","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-12 16:51:00","latitud":"-12.034599684189608","longitud":"-77.02636464572544","responsable":"10","ubicado":"si","capturado":"si","observaciones":"a","ruta":"23","prioridad":"ALTA"},{"id":"5","gestion":"SI","placa":"123452","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","link":null,"ccc2":"x","rq":"si","empresa":"x","update_at":"2024-07-12 16:18:46","created_at":"2024-07-12 16:03:37","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x","ruta":"12222","prioridad":"baja"},{"id":"6","gestion":"","placa":"ZZZ124","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"lun.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.040455215658293","longitud":"-77.08036011173431","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"2","prioridad":"ALTA"},{"id":"7","gestion":"SI","placa":"ZZZ125","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mar.","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:51:34","created_at":"2024-07-14 21:41:08","latitud":"-12.046102109347974","longitud":"-77.10302297286162","responsable":"10","ubicado":"","capturado":"","observaciones":"aaaa","ruta":"2","prioridad":"ALTA"},{"id":"8","gestion":"","placa":"ZZZ126","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mi\u00e9","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.069116423826738","longitud":"-77.03832893097851","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"3","prioridad":"ALTA"},{"id":"9","gestion":"","placa":"ZZZ127","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"jue.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.089278154784791","longitud":"-77.00913677839071","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"2","prioridad":"ALTA"},{"id":"10","gestion":"SI","placa":"ZZZ128","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"vie.","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:45:34","created_at":"2024-07-14 21:41:08","latitud":"-12.092471953004013","longitud":"-77.10936997363973","responsable":"10","ubicado":"si","capturado":"","observaciones":"12112","ruta":"1","prioridad":"ALTA"},{"id":"11","gestion":"SI","placa":"ZZZ129","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"s\u00e1b","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:44:25","created_at":"2024-07-14 21:41:08","latitud":"-12.121613598619449","longitud":"-76.9485069230161","responsable":"10","ubicado":"","capturado":"","observaciones":"xd","ruta":"3","prioridad":"BAJA"},{"id":"12","gestion":"","placa":"ZZZ130","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"dom.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-11.920351995356773","longitud":"-77.11181966476602","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"4","prioridad":"BAJA"},{"id":"13","gestion":"","placa":"ZZZ131","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"lun.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-11.859210050188638","longitud":"-77.13837537396225","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"3","prioridad":"BAJA"},{"id":"14","gestion":"","placa":"ZZZ132","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mar.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.194996044137602","longitud":"-76.90148267800998","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"1","prioridad":"BAJA"}]
+DEBUG - 2024-07-15 03:49:04 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:49:04 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:51:54 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:51:54 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:51:54 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:51:55 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:51:55 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:51:55 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:01 --> Motorizado viendo sus rutas: 0
+
+DEBUG - 2024-07-15 03:52:01 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '0\n'
+DEBUG - 2024-07-15 03:52:01 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:07 --> Motorizado viendo sus rutas: asdasdasd
+
+DEBUG - 2024-07-15 03:52:07 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = 'asdasdasd\n'
+DEBUG - 2024-07-15 03:52:07 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:11 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:52:11 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:52:11 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:21 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:52:21 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:52:21 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:30 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:52:30 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:52:30 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:52:39 --> Usuario no tiene rol o ruta asignada
+DEBUG - 2024-07-15 03:52:46 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:52:46 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:52:46 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:53:22 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:53:22 --> Consulta ejecutada: SELECT * FROM infoRutas WHERE ruta = '1\n'
+DEBUG - 2024-07-15 03:53:22 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:53:24 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:53:24 --> Consulta ejecutada: SELECT * FROM infoRutas WHERE ruta = '1\n'
+DEBUG - 2024-07-15 03:53:24 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:53:34 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 03:53:34 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 03:53:34 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 03:54:03 --> Rol no autorizado
+DEBUG - 2024-07-15 09:28:24 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 09:28:24 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 09:28:24 --> No se encontraron rutas para el usuario especificado
+DEBUG - 2024-07-15 09:28:32 --> Admin viendo todas las rutas
+DEBUG - 2024-07-15 09:28:32 --> Rutas obtenidas: [{"id":"1","gestion":"SI","placa":"PLACA1","marca":"marca1","modelo":"MOL|","color":"col1","distrito":"dist1","domicilio":"dom1","link":"","ccc2":"avenida1","rq":"no","empresa":"emp1","update_at":"2024-07-09 12:32:59","created_at":"2024-07-01 22:42:58","latitud":"-12.034132245208557","longitud":"-77.05729162040089","responsable":"8","ubicado":"si","capturado":"si","observaciones":"Observaci\u00f3n de prueba","ruta":"2","prioridad":null},{"id":"2","gestion":"","placa":"placa2","marca":"undefined","modelo":"undefined","color":"undefined","distrito":"undefined","domicilio":"undefined","link":null,"ccc2":"undefined","rq":"","empresa":"undefined","update_at":"2024-07-01 18:28:12","created_at":"2024-07-01 18:28:12","latitud":"37.386052","longitud":"-122.083851","responsable":"1","ubicado":"","capturado":"","observaciones":"Observaci\u00f3n 2","ruta":"1","prioridad":"alta"},{"id":"3","gestion":"","placa":"ZZZ123","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"dom","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-12 16:51:00","latitud":"-12.034599684189608","longitud":"-77.02636464572544","responsable":"10","ubicado":"si","capturado":"si","observaciones":"a","ruta":"23","prioridad":"ALTA"},{"id":"5","gestion":"SI","placa":"123452","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","link":null,"ccc2":"x","rq":"si","empresa":"x","update_at":"2024-07-12 16:18:46","created_at":"2024-07-12 16:03:37","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x","ruta":"12222","prioridad":"baja"},{"id":"6","gestion":"","placa":"ZZZ124","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"lun.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.040455215658293","longitud":"-77.08036011173431","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"2","prioridad":"ALTA"},{"id":"7","gestion":"SI","placa":"ZZZ125","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mar.","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:51:34","created_at":"2024-07-14 21:41:08","latitud":"-12.046102109347974","longitud":"-77.10302297286162","responsable":"10","ubicado":"","capturado":"","observaciones":"aaaa","ruta":"2","prioridad":"ALTA"},{"id":"8","gestion":"","placa":"ZZZ126","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mi\u00e9","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.069116423826738","longitud":"-77.03832893097851","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"3","prioridad":"ALTA"},{"id":"9","gestion":"","placa":"ZZZ127","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"jue.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.089278154784791","longitud":"-77.00913677839071","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"2","prioridad":"ALTA"},{"id":"10","gestion":"SI","placa":"ZZZ128","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"vie.","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:45:34","created_at":"2024-07-14 21:41:08","latitud":"-12.092471953004013","longitud":"-77.10936997363973","responsable":"10","ubicado":"si","capturado":"","observaciones":"12112","ruta":"1","prioridad":"ALTA"},{"id":"11","gestion":"SI","placa":"ZZZ129","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"s\u00e1b","link":"","ccc2":"avenida","rq":"si","empresa":"prueba","update_at":"2024-07-14 21:44:25","created_at":"2024-07-14 21:41:08","latitud":"-12.121613598619449","longitud":"-76.9485069230161","responsable":"10","ubicado":"","capturado":"","observaciones":"xd","ruta":"3","prioridad":"BAJA"},{"id":"12","gestion":"","placa":"ZZZ130","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"dom.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-11.920351995356773","longitud":"-77.11181966476602","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"4","prioridad":"BAJA"},{"id":"13","gestion":"","placa":"ZZZ131","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"lun.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-11.859210050188638","longitud":"-77.13837537396225","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"3","prioridad":"BAJA"},{"id":"14","gestion":"","placa":"ZZZ132","marca":"marca","modelo":"model","color":"col","distrito":"dist","domicilio":"mar.","link":"","ccc2":"avenida","rq":"","empresa":"prueba","update_at":"2024-07-14 21:41:08","created_at":"2024-07-14 21:41:08","latitud":"-12.194996044137602","longitud":"-76.90148267800998","responsable":null,"ubicado":null,"capturado":null,"observaciones":null,"ruta":"1","prioridad":"BAJA"}]
+DEBUG - 2024-07-15 09:28:45 --> Motorizado viendo sus rutas: 1
+
+DEBUG - 2024-07-15 09:28:45 --> Consulta ejecutada: SELECT *
+FROM `infoRutas`
+WHERE `ruta` = '1\n'
+DEBUG - 2024-07-15 09:28:45 --> No se encontraron rutas para el usuario especificado
+CRITICAL - 2024-07-15 09:42:49 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 09:43:07 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('2')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 09:44:16 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('0')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 09:44:22 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 10:07:33 --> Error: Call to a member function find() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 10:07:47 --> Error: Call to a member function find() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('2')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 10:07:51 --> Error: Call to a member function find() on null
+in APPPATH\Controllers\Service\Busqueda.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

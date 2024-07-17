@@ -1,0 +1,27 @@
+INFO - 2024-07-12 15:11:42 --> Datos recibidos: {"gestion":"","placa":"124578","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"si","empresa":"undefined","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+INFO - 2024-07-12 15:14:23 --> Datos recibidos: {"gestion":"","placa":"124578","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"si","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+INFO - 2024-07-12 15:14:29 --> Datos recibidos: {"gestion":"","placa":"124578","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"si","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+INFO - 2024-07-12 15:14:59 --> Datos recibidos: {"gestion":"","placa":"124578","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"si","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+INFO - 2024-07-12 15:15:08 --> Datos recibidos: {"gestion":"","placa":"124578","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"si","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+CRITICAL - 2024-07-12 15:15:08 --> ErrorException: Undefined index: ruta
+in APPPATH\Controllers\Service\Busqueda.php on line 165.
+ 1 APPPATH\Controllers\Service\Busqueda.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ruta', 'C:\\laragon-6.0.0\\www\\incautaciones_webservice\\app\\Controllers\\Service\\Busqueda.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->insertarRuta()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 15:25:24 --> Datos recibidos: {"gestion":"","placa":"x12124","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"si","empresa":"undefined","latitud":"-12.0303691","longitud":"-77.015683","responsable":"10","ubicado":"no","capturado":"si","observaciones":"x"}
+INFO - 2024-07-12 15:26:58 --> Datos recibidos: {"gestion":"","placa":"123333","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+INFO - 2024-07-12 15:28:36 --> Datos recibidos: {"gestion":"","placa":"122233","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"undefined","rq":"","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+CRITICAL - 2024-07-12 15:28:36 --> ErrorException: Undefined index: ruta
+in APPPATH\Controllers\Service\Busqueda.php on line 165.
+ 1 APPPATH\Controllers\Service\Busqueda.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ruta', 'C:\\laragon-6.0.0\\www\\incautaciones_webservice\\app\\Controllers\\Service\\Busqueda.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->insertarRuta()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-12 15:35:15 --> Datos recibidos: {"gestion":"","placa":"555555","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"x","latitud":"-12.0303918","longitud":"-77.0156774","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+INFO - 2024-07-12 15:39:09 --> Datos recibidos: {"gestion":"","placa":"x12321","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+INFO - 2024-07-12 15:40:49 --> Datos recibidos: {"gestion":"","placa":"x12321","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+INFO - 2024-07-12 15:40:55 --> Datos recibidos: {"gestion":"","placa":"x12321","marca":"x","modelo":"x","color":"x","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"x","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
+INFO - 2024-07-12 15:42:20 --> Datos recibidos: {"gestion":"","placa":"123222","marca":"123","modelo":"x","color":"xx","distrito":"x","domicilio":"x","ccc2":"x","rq":"","empresa":"undefined","latitud":"-12.0193024","longitud":"-76.9851392","responsable":"10","ubicado":"","capturado":"","observaciones":"x"}
