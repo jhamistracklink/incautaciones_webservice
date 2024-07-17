@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class BusquedaModel extends Model
 {
-    protected $DBGroup          = 'trackdbLocal';
+    protected $DBGroup          = 'trackdb';
     protected $table            = 'infoIncautaciones';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
