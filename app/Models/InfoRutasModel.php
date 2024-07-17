@@ -13,6 +13,6 @@ class InfoRutasModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['gestion', 'placa', 'marca', 'modelo', 'color', 'distrito', 'domicilio', 'link', 'ccc2', 'rq', 'empresa', 'update_at', 'created_at', 'latitud', 'longitud', 'responsable', 'ubicado', 'capturado', 'observaciones'];
+    protected $allowedFields    = ['gestion', 'placa', 'marca', 'modelo', 'color', 'distrito', 'domicilio', 'link', 'ccc2', 'rq', 'empresa', 'update_at', 'created_at', 'latitud', 'longitud', 'responsable', 'ubicado', 'capturado', 'observaciones', 'ruta', 'prioridad'];
 
 }
