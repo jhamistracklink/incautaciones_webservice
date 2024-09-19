@@ -1,0 +1,710 @@
+ERROR - 2024-09-16 10:25:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:25:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `usuariosIncautaciones`.`id` = :usuariosIncautaciones.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+ 5 APPPATH\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:25:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:25:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `usuariosIncautaciones`.`id` = :usuariosIncautaciones.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+ 5 APPPATH\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:25:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:25:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `usuariosIncautaciones`.`id` = :usuariosIncautaciones.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '11')
+ 5 APPPATH\Controllers\Service\Busqueda.php(96): CodeIgniter\BaseModel->find('11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutas('11')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:26:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:26:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:26:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:26:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:26:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:26:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:26:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:26:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:26:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:26:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:30:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:30:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:32:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:32:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:34:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:34:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:34:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:34:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:34:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:34:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 10:37:39 --> InvalidArgumentException: localhost is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('localhost')
+ 2 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(null)
+ 3 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\UsuariosModel', [...])
+ 4 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 5 APPPATH\Controllers\Service\Usuarios.php(52): model('UsuariosModel')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 10:37:40 --> InvalidArgumentException: localhost is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('localhost')
+ 2 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(null)
+ 3 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\UsuariosModel', [...])
+ 4 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 5 APPPATH\Controllers\Service\Usuarios.php(52): model('UsuariosModel')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 10:37:55 --> InvalidArgumentException: localhost is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('localhost')
+ 2 SYSTEMPATH\Config\Factories.php(218): CodeIgniter\Model->__construct(null)
+ 3 SYSTEMPATH\Config\Factories.php(168): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\UsuariosModel', [...])
+ 4 SYSTEMPATH\Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 5 APPPATH\Controllers\Service\Usuarios.php(52): model('UsuariosModel')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 10:38:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '010190!', 'trackdb', 3306, '', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-09-16 10:38:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosIncautaciones`
+WHERE `correo` = :correo:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Service\Usuarios.php(54): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Usuarios->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+DEBUG - 2024-09-16 19:12:24 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:12:24 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:12:24 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:12:24 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:12:42 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:12:42 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:12:42 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:12:42 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:13:57 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:13:57 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:13:57 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:13:57 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:13:59 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:13:59 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:13:59 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:13:59 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:14:25 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:14:25 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:14:25 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:14:25 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:14:45 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:14:45 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:14:45 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:14:45 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:16:08 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:16:08 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:16:08 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:16:08 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:16:51 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:16:51 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:16:51 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:16:51 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:17:38 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:17:38 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:17:38 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:17:38 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:17:56 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:17:56 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:17:56 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:17:56 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:24:48 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:24:48 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:24:48 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:24:48 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:25:34 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:25:34 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:25:34 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:25:34 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:32:06 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:32:06 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:32:06 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:32:06 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:32:35 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:32:35 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:32:35 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:32:35 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:32:55 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:32:55 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:32:55 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:32:55 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:42:07 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:42:07 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:42:07 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:42:07 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:42:25 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:42:25 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:42:25 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 19:42:25 --> Total de rutas devueltas al frontend: 4
+DEBUG - 2024-09-16 19:43:16 --> Rol del usuario: 1
+DEBUG - 2024-09-16 19:43:16 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 19:43:16 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 20:03:29 --> Rol del usuario: 1
+DEBUG - 2024-09-16 20:03:29 --> Ruta del usuario: 1
+DEBUG - 2024-09-16 20:03:29 --> Administrador - Total rutas encontradas: 4
+DEBUG - 2024-09-16 20:47:15 --> Consulta ejecutada: SELECT `rutas_detalle`.*, `infoRutas`.`gestion`
+FROM `rutas_detalle`
+JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE `rutas_detalle`.`ruta` = '11'
