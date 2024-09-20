@@ -1,0 +1,754 @@
+ERROR - 2024-09-18 21:03:30 --> mysqli_sql_exception: Unknown column 'gestion' in 'where clause' in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:03:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:03:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:03:30 --> [Caused by] mysqli_sql_exception: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:04:14 --> mysqli_sql_exception: Unknown column 'gestion' in 'where clause' in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:04:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:04:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:04:14 --> [Caused by] mysqli_sql_exception: Unknown column 'gestion' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = \'SI\'
+AND `capturado` = \'si\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`
+FROM `rutas_detalle`
+WHERE `gestion` = :gestion:
+AND `capturado` = :capturado:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(415): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:34:10 --> ArgumentCountError: Too few arguments to function App\Controllers\Service\Busqueda::getListaPlacasConDirecciones(), 0 passed in C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Service\Busqueda.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:36:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Service\Busqueda::getListaPlacasConDirecciones(), 0 passed in C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Service\Busqueda.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:29 --> ArgumentCountError: Too few arguments to function App\Controllers\Service\Busqueda::getListaPlacasConDirecciones(), 0 passed in C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Service\Busqueda.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:51:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:51:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:50 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:51:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:51:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:54 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:51:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:51:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:51:55 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'.3', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:53:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:53:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:53:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:53:03 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:53:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:53:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:53:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:53:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:56:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:56:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:56:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:56:03 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:56:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:56:04 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:56:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:56:04 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-18 21:57:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4 in C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_d...', 0)
+#1 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_d...')
+#2 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_d...')
+#3 C:\laragon-6.0.0\www\incautaciones_webservice\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_d...', Array, false)
+#4 C:\laragon-6.0.0\www\incautaciones_webservice\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon-6.0.0\www\incautaciones_webservice\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon-6.0.0\www\incautaciones_webservice\app\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+#8 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+#9 C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon-6.0.0\www\incautaciones_webservice\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-18 21:57:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:57:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:57:07 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `rutas_detalle`.`id`, `rutas_detalle`.`placa`, `rutas_detalle`.`distrito`, `rutas_detalle`.`domicilio`, `rutas_detalle`.`latitud`, `rutas_detalle`.`longitud`, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion
+FROM `rutas_detalle`
+INNER JOIN `infoRutas` ON `infoRutas`.`id` = `rutas_detalle`.`idRuta`
+WHERE (`infoRutas`.`capturado` != \'si\' OR `infoRutas`.`capturado` IS NULL) AND `infoRutas`.`gestion` != \'SI AND `rutas_detalle`.`ruta` = \'3\'', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Service\Busqueda.php(327): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->listaRutasDetalle('1')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 21:59:42 --> ArgumentCountError: Too few arguments to function App\Controllers\Service\Busqueda::getListaPlacasConDirecciones(), 0 passed in C:\laragon-6.0.0\www\incautaciones_webservice\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Service\Busqueda.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Service\Busqueda->getListaPlacasConDirecciones()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service\Busqueda))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
