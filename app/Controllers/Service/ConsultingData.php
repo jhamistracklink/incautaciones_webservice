@@ -67,46 +67,8 @@ class ConsultingData extends ResourceController
           @FechaI='$var10',      
           @FechaF='$var11'");
 
-
-
         $respuestaBSOFT = $data->getResultArray();
 
-        $resultFinal = [];
-        $contador = 0;
-
-        $modelOnyx = model('ConsultingDataOnyxModel');
-
-        foreach ($respuestaBSOFT as $key => $value) {
-
-            $contador++;
-
-            $resultadoParams = [
-                'nombre_equipo' => $value['modelo'],
-                'marca' => $value['marca'],
-                'modelo' => $value['modelo'],
-                'nserie' => $value['OP_Numero_Doc'],
-                'codHomologacion' => $value['codHomologacion'],
-                'comprador' => $value['AnexoDescripcion'],
-                'documento' => $value['Anexo'],
-            ];
-
-            $resultadoParams['nro'] = $contador;
-
-            if (empty($value['Direccion'])) {
-                $dataFinalOnyx = $modelOnyx->where("identdoc", $value['Anexo'])->first();
-
-                if (empty($dataFinalOnyx)) {
-                    $resultadoParams['direccion'] = 'SIN DIRECCIÓN';
-                } else {
-                    $resultadoParams['direccion'] = $dataFinalOnyx['addressmain'];
-                }
-            } else {
-                $resultadoParams['direccion'] = $value['Direccion'];
-            }
-
-            $resultFinal[] = $resultadoParams;
-        }
-
-        return $this->respond($resultFinal, 200);
+        return $this->respond($respuestaBSOFT, 200);
     }
 }
