@@ -314,9 +314,9 @@ class Busqueda extends ResourceController
         $rutaUsuario = $usuario['ruta'];
 
         if (empty($rutaUsuario) || $rutaUsuario == NULL) {
-            $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL) AND infoRutas.gestion != 'SI'";
+            $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL)";
         } else {
-            $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL) AND infoRutas.gestion != 'SI' AND rutas_detalle.ruta ='$rutaUsuario'";
+            $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL) AND rutas_detalle.ruta ='$rutaUsuario'";
         }
 
         // $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL) AND infoRutas.gestion != 'SI'";
@@ -348,6 +348,12 @@ class Busqueda extends ResourceController
         $rutaz = $this->request->getPost('ruta');
         $prioridad = $this->request->getPost('prioridad');
 
+        $latitud = $this->request->getPost('latitud');
+        $longitud = $this->request->getPost('longitud');
+
+        $idDetalle = $this->request->getPost('idDetalle');
+
+
         if (!$placa || !$rq) {
             return $this->respond(['msg' => 'Placa y RQ son requeridos', 'status' => 'error'], 400);
         }
@@ -372,6 +378,26 @@ class Busqueda extends ResourceController
         ];
 
         if ($model->update($ruta['id'], $updateData)) {
+
+            //de rutas_seguimiento
+            $registerData = [
+                'id_info_ruta' => $ruta['id'],
+                'id_ruta_detalle' => $idDetalle,
+                'gestion' => $gestion,
+                'rq' => $rq,
+                'responsable' => $resposable,
+                'register_at' => date('Y-m-d H:i:s'),
+                'ubicado' => $ubicado,
+                'capturado' => $capturado,
+                'observaciones' => $observaciones,
+                'ruta' => $rutaz,
+                'prioridad' => $prioridad,
+                'latitud' => $latitud,
+                'longitud' => $longitud
+            ];
+            $modelSeguimiento = model('RutasSeguimientoModel');
+            $modelSeguimiento->save($registerData);
+
             return $this->respond(['msg' => 'Actualización exitosa', 'status' => 'ok']);
         } else {
             return $this->respond(['msg' => 'Error al actualizar el registro', 'status' => 'error'], 500);
