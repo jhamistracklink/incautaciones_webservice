@@ -321,10 +321,10 @@ class Busqueda extends ResourceController
 
         // $arr = "(infoRutas.capturado!= 'si' OR infoRutas.capturado IS NULL) AND infoRutas.gestion != 'SI'";
         // Obtener todas las placas, distritos y domicilios desde rutas_detalle
-        $rutasDetalleQuery = $modelRutasDetalle->select('rutas_detalle.id, rutas_detalle.placa, rutas_detalle.distrito, rutas_detalle.domicilio, rutas_detalle.latitud, rutas_detalle.longitud, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion')
+        $rutasDetalleQuery = $modelRutasDetalle->select('rutas_detalle.id, rutas_detalle.placa, rutas_detalle.distrito, rutas_detalle.domicilio, rutas_detalle.latitud, rutas_detalle.longitud, concat(rutas_detalle.domicilio, " ", rutas_detalle.distrito) AS direccion, infoRutas.prioridad, infoRutas.gestion')
             ->join('infoRutas', 'infoRutas.id = rutas_detalle.idRuta', 'inner')
             ->where($arr)
-            ->findAll();
+            ->findAll(5);
             
         if (empty($rutasDetalleQuery)) {
             return $this->respond(['msg' => 'No se encontraron rutas', 'status' => 'error'], 404);
